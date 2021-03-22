@@ -1,0 +1,131 @@
+//
+// Search
+// --------------------------------------------------
+
+
+
+.search-lists {
+  .container {
+    >.row {
+      padding: 0 70px;
+    }
+  }
+
+  .section-title {
+    margin-bottom: 0;
+  }
+
+  .section-filter {
+    &__tab {
+      float: left;
+
+      a {
+        display: inline-block;
+        font-size: $font-size-18;
+        font-weight: $font-weight-normal;
+        text-decoration: none;
+        padding: 8px 16px 6px;
+        border: 1px solid $gray-light;
+        line-height: 1;
+        color: $gray-light;
+        text-align: center;
+        margin-right: 12px;
+        transition: $transition-base;
+
+        &.active {
+          color: $brand-primary;
+          border: 1px solid $brand-primary;
+        }
+      }
+    }
+  }
+}
+
+.lists-search {
+  .card {
+    padding-bottom: $block-spacing-small;
+    margin-bottom: $block-spacing-base;
+    border-bottom: 1px solid #fff;
+
+    &__img {
+      float: left;
+      margin: 0;
+
+      img {
+        width: 206px;
+      }
+    }
+
+    &__data {
+      float: left;
+      width: 100%;
+
+      h4 {
+        margin-bottom: $spacing-tiny;
+        height: inherit;
+        overflow: inherit
+      }
+
+      p {
+        color: $gray-middle;
+        font-weight: $font-weight-slim;
+        line-height: 1.6;
+      }
+
+      strong {
+        font-weight: inherit;
+        color: $brand-primary;
+      }
+    }
+  }
+}
+
+
+// RWD
+@media (max-width: $screen-lg-min) /*1200*/ {
+}
+
+@media (max-width: $screen-md-min) /*970*/ {
+}
+
+@media (max-width: $screen-sm-min) /*769*/ {
+  .search-lists {
+    .container {
+      >.row {
+        padding: 0 $spacing-base;
+      }
+    }
+  }
+
+  .lists-search {
+    .card {
+      padding-bottom: $block-spacing-small;
+      margin-bottom: $block-spacing-base;
+      border-bottom: 1px solid #fff;
+  
+      &__img {
+        float: inherit;
+        width: 100%;
+        margin-bottom: $block-spacing-small;
+  
+        img {
+          width: 100%;
+        }
+      }
+  
+      &__data {
+        float: inherit;
+        width: 100%;
+        padding-left: 0;
+
+        p {
+          overflow: hidden;
+          height: 75px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+}

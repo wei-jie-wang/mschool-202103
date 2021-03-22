@@ -1,0 +1,205 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Base styles
+.btn {
+  background-color: transparent;
+  display: inline-block;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: $spacing-small $spacing-base;
+  border-radius: 50px;
+  font-size: $font-size-18;
+  font-weight: $font-weight-medium;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: $transition-base;
+  cursor: pointer;
+  position: relative;
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      @include tab-focus;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &:active, &.active {
+    outline: 0;
+    background-image: none;
+  }
+
+  // Icon margin
+  i {
+    margin-left: $spacing-tiny;
+    width: 24px;
+    height: 24px;
+  }
+  
+  &--small {
+    padding: $spacing-tiny $spacing-small;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-base;
+  }
+  
+  &--big {
+    font-size: $font-size-22;
+    padding: $spacing-small $spacing-xlarge*2;
+  }
+
+  &[data-btnInfo] {
+    z-index: 9999;
+    position: relative;
+  
+    &::before {
+      content: attr(data-btnInfo);
+      color: #999;
+      font-size: $font-size-14;
+      font-weight: 400;
+      display: inline-block;
+      position: absolute;
+      top: -22px;
+      left: 0;
+      white-space: pre;
+      z-index: 999;
+    }
+  }
+}
+
+
+
+.btn-primary {
+  background-color: $brand-primary;
+  box-shadow: 0 4px 0 #B13737;
+
+  &:hover, &active {
+    background-color: $brand-primary-variant;
+  }
+}
+.btn-border-primary {
+  border-color: $brand-primary;
+  color: $brand-primary;
+
+  &:hover, &active, &:focus {
+    border-color: $brand-primary-variant;
+    color: $brand-primary-variant;
+  }
+}
+
+.btn-secondary {
+  background-color: $brand-secondary;
+
+  &:hover, &active {
+    background-color: $brand-secondary-variant;
+  }
+}
+.btn-border-secondary {
+  border-color: $brand-secondary;
+  color: $brand-secondary;
+
+  &:hover, &active {
+    border-color: $brand-secondary-variant;
+    color: $brand-secondary-variant;
+  }
+}
+
+.btn-warning {
+  background-color: $brand-warning;
+
+  &:hover, &active {
+    opacity: .5;
+  }
+}
+.btn-border-warning {
+  border-color: $brand-warning;
+  color: $brand-warning;
+
+  &:hover, &active {
+    color: $brand-warning;
+    opacity: .5;
+  }
+}
+
+.btn-info {
+  background-color: $brand-info;
+
+  &:hover, &active {
+    opacity: .5;
+  }
+}
+.btn-border-info {
+  border-color: $brand-info;
+  color: $brand-info;
+
+  &:hover, &active {
+    color: $brand-info;
+    opacity: .5;
+  }
+}
+
+.btn-disable {
+  background-color: $gray-lighter;
+  cursor: not-allowed;
+
+  &:hover, &active {
+    cursor: not-allowed;
+  }
+}
+.btn-border-disable {
+  border-color: $gray-lighter;
+  color: $gray-lighter;
+  font-weight: $font-weight-normal;
+  cursor: not-allowed;
+  pointer-events: none;
+
+  &:hover, &active {
+    color: $gray-lighter;
+  }
+}
+
+.btn-cancel {
+  background-color: $gray-lighter;
+
+  &:hover, &active {
+    opacity: .5;
+  }
+}
+.btn-border-cancel {
+  border-color: $gray-lighter;
+  color: $gray-lighter;
+  font-weight: $font-weight-normal;
+  cursor: not-allowed;
+  pointer-events: none;
+
+  &:hover, &active {
+    color: $gray-lighter;
+  }
+}
+
+
+@media (max-width: $screen-sm-min) /*769*/ {
+  .btn {
+    &--big {
+      padding: $spacing-small auto;
+    }
+  }
+}

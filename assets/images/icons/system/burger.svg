@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icon/system/burger</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/system/burger" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M1,6.5 C0.44771525,6.5 0,6.05228475 0,5.5 C0,4.94771525 0.44771525,4.5 1,4.5 L23,4.5 C23.5522847,4.5 24,4.94771525 24,5.5 C24,6.05228475 23.5522847,6.5 23,6.5 L1,6.5 Z M1,13.5 C0.44771525,13.5 0,13.0522847 0,12.5 C0,11.9477153 0.44771525,11.5 1,11.5 L23,11.5 C23.5522847,11.5 24,11.9477153 24,12.5 C24,13.0522847 23.5522847,13.5 23,13.5 L1,13.5 Z M1,20.5 C0.44771525,20.5 0,20.0522847 0,19.5 C0,18.9477153 0.44771525,18.5 1,18.5 L23,18.5 C23.5522847,18.5 24,18.9477153 24,19.5 C24,20.0522847 23.5522847,20.5 23,20.5 L1,20.5 Z" id="Combined-Shape" fill="#000000"></path>
+    </g>
+</svg>

@@ -1,0 +1,349 @@
+//
+// Course
+// --------------------------------------------------
+
+
+//highlight
+.course-highlight {
+  position: relative;
+  padding: 70px 0;
+  margin-bottom: $block-spacing-xlarge + 10px;
+
+  &::after {
+    content: '';
+    border-color: $brand-primary transparent transparent transparent;
+    border-style: solid;
+    border-width: 20px 30px 0;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 30px);
+  }
+
+  &__data {
+    color: #fff;
+    text-align: center;
+
+    h1 {
+      font-size: $font-size-50;
+      font-weight: $font-weight-bold;
+      margin-bottom: $spacing-small;
+    }
+
+    h2 {
+      font-size: $font-size-30;
+      font-weight: $font-weight-normal;
+    }
+  }
+}
+
+.courseList-highlight {
+  text-align: center;
+  padding-top: 50px;
+
+  &__nav {
+    margin-bottom: $block-spacing-large;
+
+    ul {
+      li {
+        display: inline-block;
+        font-size: $font-size-18;
+        font-weight: $font-weight-normal;
+        margin-right: $block-spacing-tiny - 4px;
+        opacity: .6;
+        transition: $transition-base;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        &.active, &:hover {
+          opacity: 1;
+        }
+
+        a {
+          color: #fff;
+          padding: $spacing-tiny $spacing-small;
+          border: 1px solid #fff;
+          display: block;
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  &__title {
+    overflow: hidden;
+
+    .container {
+      background-color: $bg-defualt;
+      box-shadow: 0 0 6px rgba(0,0,0,.15);
+
+      .title {
+        font-size: $font-size-36;
+        font-weight: $font-weight-medium;
+        padding: $spacing-small $block-spacing-large;
+        margin: $block-spacing-large 0 $block-spacing-tiny;
+        border: 1px solid $gray-lighter;
+        display: inline-block;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+//course List
+.course-lists {
+
+  .row {
+    padding: 0 70px;
+    margin-top: $block-spacing-base;
+  }
+
+  &__new-topic {
+    float: left;
+    width: 60%;
+
+    &.item {
+      width: 100%;
+
+      .card {
+        a:hover {
+          .card__data {
+            h6 {
+              color: $brand-primary;
+            }
+          }
+        }
+
+        &__data {
+          h6 {
+            font-weight: $font-weight-normal;
+            color: $brand-secondary-900;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+
+    .lists-topic {
+      .card {
+        border-bottom: 1px dotted $brand-secondary;
+        padding-bottom: $spacing-small;
+        margin-bottom: $block-spacing-base;
+        
+        a {
+          display: flex;
+        }
+
+        &__img {
+          // float: left;
+          background-color: transparent;
+          background-image: url(../../assets/images/BG_card-topic.svg);
+          background-repeat: no-repeat;
+          background-position-y: 5px;
+          display: block;
+          margin-bottom: 0;
+          padding: 0 0 15px 15px;
+          width: 265px;
+
+          img {
+            width: 100%;
+            display: block;
+            transition: $transition-base;
+          }
+        }
+
+        &__data {
+          // float: left;
+          padding-left: $block-spacing-base;
+          width: calc(100% - 265px);
+          position: relative;
+
+          h4 {
+            height: inherit;
+          }
+
+          p {
+            line-height: 1.4;
+            height: 66px;
+            overflow: hidden;
+          }
+
+          .info {
+            font-size: $font-size-14;
+            color: $gray-light;
+            text-align: right;
+            width: 100%;
+            margin-top: $spacing-small;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+    
+    .lists-item {
+      .card {
+        padding-bottom: $spacing-small;
+        margin-bottom: $block-spacing-large;
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+
+  &__hot-article {
+    float: right;
+    width: 33%;
+
+    .hot-article {
+      ul {
+        li {
+          overflow: hidden;
+          margin-bottom: $block-spacing-small;
+
+          span {
+            font-family: "Lusitana";
+            font-size: $font-size-36;
+            color: $brand-secondary;
+            display: inline-block;
+            width: 30px;
+            line-height: 1;
+          }
+
+          a {
+            float: right;
+            font-size: $font-size-18;
+            font-weight: $font-weight-medium;
+            display: block;
+            width: calc(100% - 50px);
+            padding-bottom: $spacing-tiny;
+            border-bottom: 1px solid #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// RWD
+@media (max-width: $screen-lg-min) /*1200*/ {
+}
+
+@media (max-width: $screen-md-min) /*970*/ {
+}
+
+@media (max-width: $screen-sm-min) /*769*/ {
+  .course-highlight {
+    margin-bottom: 50px;
+    padding: 60px 0 50px;
+
+    &::after {
+      border-width: 15px 25px 0;
+      bottom: -15px;
+      left: calc(50% - 25px);
+    }
+
+    &__data {
+      h1 {
+        font-size: $font-size-36;
+      }
+
+      h2 {
+        font-size: $font-size-21;
+        font-weight: $font-weight-slim;
+      }
+    }
+  }
+  
+  .courseList-highlight {
+    padding-top: 30px;
+
+    &__nav {
+      margin-bottom: 30px;
+    
+      ul {
+        white-space: nowrap;
+        overflow-x: scroll;
+
+        li {
+          display: inline-block;
+
+          &:first-child {
+            margin-left: $spacing-base;
+          }
+          
+          &:last-child {
+            margin-right: $spacing-base;
+          }
+        }
+      }
+    }
+
+    &__title {
+      .container {
+        .title {
+          // font-size: $font-size-36;
+        }
+      }
+    }
+  }
+
+  .course-index {
+    padding: 0 $spacing-base;
+  }
+
+  .course-lists {
+    .row {
+      padding: 0 $spacing-base;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__new-topic {
+      float: inherit;
+      width: 100%;
+      flex: 1;
+
+      .lists-topic {
+        .card {
+          a {
+            display: inherit;
+          }
+
+          &__img {
+            float: inherit;
+            background-size: contain;
+            padding: 0 0 19px 15px;
+            margin-bottom: 20px;
+            width: 100%;
+          }
+
+          &__data {
+            float: inherit;
+            padding: 0;
+            width: 100%;
+
+            .info {
+              position: inherit;
+            }
+          }
+        }
+      }
+    }
+
+    &__hot-article {
+      float: inherit;
+      width: 100%;
+      flex: 1;
+      order: -1;
+      margin-bottom: $block-spacing-xlarge;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+}

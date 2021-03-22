@@ -1,0 +1,180 @@
+<div class="container">
+  <div class="row">
+    <div class="main-header__logos">
+      <img src="assets/images/IMG_logo-manager.svg" class="logo-manager">
+      <a href="index.html">
+        <img src="assets/images/IMG_logo-mschool.svg" class="logo-mschool">
+      </a>
+    </div>
+
+    <div class="nav-box">
+      <div class="main-header__member">
+        <div class="main-header__member--login">
+          <a href="profile.html"><i class="icon-member"></i>註冊 / 登入</a>
+        </div>
+        <!-- <div class="main-header__member--signed">
+          <div class="member-data">
+            Hi, username<i class="icon-arrow-down"></i>
+          </div>
+          <div class="member-submenu">
+            <ul>
+              <li><a href="profile.html">基本資料</a></li>
+              <li><a href="progress.html">學習進度</a></li>
+              <li><a href="bookmarks.html">收藏文章</a></li>
+              <li><a href="buy.html">購買紀錄</a></li>
+              <li class="company"><a href="company_profile.html"><i class="icon-member"></i>企業專區</a></li>
+              <li><a href="">登出</a></li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+
+      <nav class="main-header__nav">
+        <ul>
+          <li id="submenu-book">
+            <a href="video-index.html">新書快讀</a>
+
+            <i class="icon-arrow-down"></i>
+            <div class="more">
+              <div class="more__submenu">
+                <a href="video-list.html" class="">全部書單</a>
+                <a href="" class="">影片試閱</a>
+                <a href="" class="">FAQ</a>
+                <a href="" class="">音頻好禮</a>
+                <a href="" class="">優惠方案</a>
+              </div>
+            </div>
+          </li>
+
+          <li id="submenu-course">
+            <a href="course.html">管理學程</a>
+
+            <i class="icon-arrow-down"></i>
+            <div class="more">
+              <div class="more__submenu">
+                <a href="course-list.html" class="course-1">領導帶人</a>
+                <a href="course-list.html" class="course-2">經營管理</a>
+                <a href="course-list.html" class="course-3">實用技能</a>
+                <a href="course-list.html" class="course-4">自我激勵</a>
+                <a href="course-list.html" class="course-5">人力資源</a>
+                <a href="course-list.html" class="course-6">業務銷售</a>
+                <a href="course-list.html" class="course-7">行銷創意</a>
+                <a href="course-list.html" class="course-8">成功案例</a>
+                <a href="course-list.html" class="course-9">職涯規劃</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="items.html">CEO管理講堂</a>
+          </li>
+          <li>
+            <a href="items.html">名師一堂課</a>
+          </li>
+        </ul>
+        <!-- <a href="landing.html" class="btn btn--small btn-primary">免費試閱</a> -->
+      </nav>
+
+    </div>
+
+    <div class="main-header__search">
+      <div class="icon-search icon"></div>
+      <div class="search-box">
+        <div class="search-box__data icon-search">
+          <input type="text" placeholder="搜尋關鍵字" class="search-box__input input-text">
+        </div>
+      </div>
+    </div>
+    <div class="icon-burger"></div>
+  </div>
+</div>
+
+<script>
+  //header shadow
+  $(window).scroll(function() {
+    var TOPOUT = $(".main-header").outerHeight();
+    var scrollVal = $(this).scrollTop();
+    if ( scrollVal > TOPOUT){
+      $(".main-header").stop().addClass("main-header--active");
+      return false;
+    } else {
+      $(".main-header").stop().removeClass("main-header--active");
+      return false;
+    }
+  });
+
+  // Sub menu
+  $(document).ready(function(){
+    var allDESKTOP = window.matchMedia('(min-width: 769px)');
+    var allLAPTOP = window.matchMedia("(max-width: 970px)");
+
+    if (allDESKTOP.matches) {
+      // Course
+      $('#submenu-course .icon-arrow-down').bind('click', function(event) {
+        $('.main-header__nav .more__submenu').fadeOut(300);
+        $('.main-header__nav .icon-arrow-down').removeClass('active');
+        $('#submenu-course .more__submenu').fadeToggle('slow');
+        $(this).toggleClass('active');
+        return false;
+      });
+      // Book
+      $('#submenu-book .icon-arrow-down').bind('click', function(event) {
+        $('.main-header__nav .more__submenu').fadeOut(300);
+        $('.main-header__nav .icon-arrow-down').removeClass('active');
+        $('#submenu-book .more__submenu').fadeToggle('slow');
+        $(this).toggleClass('active');
+        return false;
+      });
+
+      $(document).click(function(event){
+      var _con = $('.main-header__nav .more__submenu');
+        if(!_con.is(event.target) && _con.has(event.target).length === 0){
+          $('.main-header__nav .more__submenu').fadeOut(300);
+          $('.main-header__nav .icon-arrow-down').removeClass('active');
+        }
+      });
+      
+      // Member
+      $('.main-header__member--signed .member-data').bind('click', function(event) {
+        $('.main-header__member--signed .member-submenu').fadeToggle('slow');
+        return false;
+      });
+
+      $(document).click(function(event){
+      var _con = $('.main-header__member--signed .member-submenu');
+        if(!_con.is(event.target) && _con.has(event.target).length === 0){
+          $('.main-header__member--signed .member-submenu').fadeOut(300);
+        }
+      });
+    }
+
+    if (allLAPTOP.matches) {
+      $('.main-header .icon-burger').bind('click', function(event) {
+        $('.main-header .nav-box').toggleClass('nav-box--active');
+        $('.main-header .icon-burger').toggleClass('icon-burger--close');
+        return false;
+      });
+
+      $('.main-header__nav .icon-arrow-down').bind('click', function(event) {
+        $('.main-header__nav .more__submenu').fadeToggle();
+        $('.main-header__nav .icon-arrow-down').toggleClass('active');
+        return false;
+      });
+    }
+  });
+
+  // Search
+  $(document).ready(function(){
+      // event.stopPropagation();
+      $('.main-header .icon-search').bind('click', function(event) {
+        $('.main-header .search-box').fadeIn(200);
+        return false;
+      });
+
+      $(document).click(function(event){
+      var _con = $('.main-header .search-box');
+        if(!_con.is(event.target) && _con.has(event.target).length === 0){
+          $('.main-header .search-box').fadeOut(300);
+        }
+      });
+  });
+</script>

@@ -1,0 +1,161 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+// Reset the box-sizing
+* {
+  @include box-sizing(border-box);
+}
+*:before, *:after {
+  @include box-sizing(border-box);
+}
+::selection {
+  background: $brand-primary;
+  color: #fff;
+}
+// Target position
+*:target:before {
+  content: '';
+  width: 100%;
+  height: 80px;
+  display: block;
+}
+
+// Body reset
+html {
+  font-size: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $body-bg;
+  overflow-x: hidden;
+  padding-top: 80px;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  transition: $transition-base;
+  
+  &:hover, &:focus {
+    outline: 0;
+  }
+}
+
+
+// Links
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: $transition-base;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+    outline: 0;
+  }
+
+  &:focus {
+    @include tab-focus;
+  }
+}
+
+.text-u {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.text-small {
+  font-size: 0.875rem;
+  padding: 0;
+
+  &:hover {
+    i {
+      color: $brand-primary;
+    }
+  }
+
+  i {
+    color: $gray-light;
+    margin-right: 2px;
+    top: 2px !important;
+
+    &::before {
+      font-size: 1rem;
+    }
+  }
+}
+
+// Video container
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// 
+.pcOnly {
+  display: inline-block !important;
+}
+.mobileOnly {
+  display: none !important;
+}
+
+
+// iOS "clickable elements" fix for role="button"
+[role="button"] {
+  cursor: pointer;
+}
+
+
+
+// RWD
+@media (max-width: $screen-lg-min) /*1200*/ {
+}
+
+@media (max-width: $screen-md-min) /*970*/ {
+}
+
+@media (max-width: $screen-sm-min) /*769*/ {
+  body {
+    padding-top: 56px;
+  }
+  .pcOnly {
+    display: none !important;
+  }
+  .mobileOnly {
+    display: inline-block !important;
+  }
+  *:target:before {
+    height: 60px;
+  }
+}
+
+@media (max-width: $screen-xs-min) /*480*/ {
+}
+
+@media (max-width: 320px) {
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>icon-chips--active</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="6.3-會員/人資/指派專題" transform="translate(-730.000000, -399.000000)">
+            <g id="main" transform="translate(187.000000, 140.000000)">
+                <g id="content" transform="translate(243.000000, 0.000000)">
+                    <g id="Group-4" transform="translate(50.000000, 88.000000)">
+                        <g id="Group-7-Copy" transform="translate(0.000000, 80.000000)">
+                            <g id="Controls/input/placeholder-Copy" transform="translate(112.000000, 69.000000)">
+                                <g id="Controls-/input/placeholder">
+                                    <g id="Group-10" transform="translate(16.000000, 16.000000)">
+                                        <g id="Padding-Group-2">
+                                            <g id="Stacked-Group" transform="translate(16.000000, 6.000000)">
+                                                <g id="icon-chips--active" transform="translate(106.000000, 0.000000)">
+                                                    <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="10" cy="10" r="10"></circle>
+                                                    <g id="icon/system/close" transform="translate(3.000000, 3.000000)" fill="#000000">
+                                                        <path d="M2.05025253,2.3419192 C2.27805837,2.11411336 2.64740461,2.11411336 2.87521044,2.3419192 L2.87521044,2.3419192 L6.99939815,6.46606482 L11.1247896,2.3419192 C11.3525954,2.11411336 11.7219416,2.11411336 11.9497475,2.3419192 C12.1775533,2.56972504 12.1775533,2.93907127 11.9497475,3.16687711 L7.82439815,7.29106482 L11.9497475,11.4164562 C12.1522415,11.6189503 12.1747409,11.9332788 12.0172455,12.1606249 L11.9497475,12.2414141 C11.7219416,12.46922 11.3525954,12.46922 11.1247896,12.2414141 L11.1247896,12.2414141 L6.99939815,8.11606482 L2.87521044,12.2414141 C2.64740461,12.46922 2.27805837,12.46922 2.05025253,12.2414141 C1.82244669,12.0136083 1.82244669,11.6442621 2.05025253,11.4164562 L6.17439815,7.29106482 L2.05025253,3.16687711 C1.84775845,2.96438303 1.82525911,2.65005456 1.98275451,2.4227084 Z" id="Combined-Shape"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

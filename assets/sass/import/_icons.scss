@@ -1,0 +1,148 @@
+//
+// Icons
+// --------------------------------------------------
+
+
+// System icons
+@font-face {
+  font-family: "mschool";
+  src:url("../../assets/fonts/mschool.eot");
+  src:url("../../assets/fonts/mschool.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/mschool.woff") format("woff"),
+    url("../../assets/fonts/mschool.ttf") format("truetype"),
+    url("../../assets/fonts/mschool.svg#mschool") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "mschool" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  font-size: $font-size-24;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "mschool" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  font-size: $font-size-24;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+  content: "\61";
+}
+.icon-loading:before {
+  content: "\62";
+}
+.icon-member:before {
+  content: "\63";
+}
+.icon-message:before {
+  content: "\64";
+}
+.icon-more-vert:before {
+  content: "\65";
+}
+.icon-ok:before {
+  content: "\66";
+}
+.icon-search:before {
+  content: "\67";
+}
+.icon-url:before {
+  content: "\68";
+}
+.icon-wrong:before {
+  content: "\69";
+}
+.icon-arrow-left:before {
+  content: "\6a";
+}
+.icon-arrow-right:before {
+  content: "\6b";
+}
+.icon-arrow-small-left:before {
+  content: "\6c";
+}
+.icon-arrow-small-right:before {
+  content: "\6d";
+}
+.icon-arrow-up:before {
+  content: "\6e";
+}
+.icon-bookmark:before {
+  content: "\6f";
+}
+.icon-bookmark-active:before {
+  content: "\70";
+}
+.icon-burger:before {
+  content: "\71";
+}
+.icon-burger2:before {
+  content: "\72";
+}
+.icon-clock:before {
+  content: "\73";
+}
+.icon-close:before {
+  content: "\74";
+}
+.icon-detele:before {
+  content: "\75";
+}
+
+
+
+// Course icons
+[class^="icon-course-"],
+[class*=" icon-course-"] {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-width: 160px;
+  max-height: 160px;
+  width: 100%;
+  height: 100%;
+}
+.icon-course-1 { background-image: url(../../assets/images/icons/course/icon-course-1.svg); }
+.icon-course-2 { background-image: url(../../assets/images/icons/course/icon-course-2.svg); }
+.icon-course-3 { background-image: url(../../assets/images/icons/course/icon-course-3.svg); }
+.icon-course-4 { background-image: url(../../assets/images/icons/course/icon-course-4.svg); }
+.icon-course-5 { background-image: url(../../assets/images/icons/course/icon-course-5.svg); }
+.icon-course-6 { background-image: url(../../assets/images/icons/course/icon-course-6.svg); }
+.icon-course-7 { background-image: url(../../assets/images/icons/course/icon-course-7.svg); }
+.icon-course-8 { background-image: url(../../assets/images/icons/course/icon-course-8.svg); }
+.icon-course-9 { background-image: url(../../assets/images/icons/course/icon-course-9.svg); }
+
+[class^="icon-courseS-"],
+[class*=" icon-courseS-"] {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+.icon-courseS-1 { background-image: url(../../assets/images/icons/course/icon-courseS-1.svg); }
+.icon-courseS-2 { background-image: url(../../assets/images/icons/course/icon-courseS-2.svg); }
+.icon-courseS-3 { background-image: url(../../assets/images/icons/course/icon-courseS-3.svg); }
+.icon-courseS-4 { background-image: url(../../assets/images/icons/course/icon-courseS-4.svg); }
+.icon-courseS-5 { background-image: url(../../assets/images/icons/course/icon-courseS-5.svg); }
+.icon-courseS-6 { background-image: url(../../assets/images/icons/course/icon-courseS-6.svg); }
+.icon-courseS-7 { background-image: url(../../assets/images/icons/course/icon-courseS-7.svg); }
+.icon-courseS-8 { background-image: url(../../assets/images/icons/course/icon-courseS-8.svg); }
+.icon-courseS-9 { background-image: url(../../assets/images/icons/course/icon-courseS-9.svg); }

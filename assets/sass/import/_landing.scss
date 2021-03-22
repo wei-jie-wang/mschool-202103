@@ -1,0 +1,259 @@
+//
+// landing
+// --------------------------------------------------
+
+
+//highlight
+.landing-highlight {
+  text-align: center;
+  padding-top: 100px;
+
+  h1 {
+    color: #fff;
+    font-size: $font-size-50;
+    font-weight: $font-weight-bold;
+  }
+
+  &__footer {
+    height: 40px;
+    overflow: hidden;
+    margin-top: $block-spacing-xlarge;
+
+    .container {
+      background-color: $bg-defualt;
+      box-shadow: 0 0 6px rgba(0,0,0,0.15);
+      height: 40px;
+    }
+  }
+}
+
+.landing-main {
+  &__info {
+    margin-bottom: 70px;
+    margin-top: $block-spacing-small;
+    
+
+    p {
+      font-size: $font-size-20;
+      text-align: center;
+      margin-bottom: $block-spacing-base;
+    }
+  }
+
+  &__feature {
+    h2 {
+      font-size: $font-size-36;
+      text-align: center;
+      position: relative;
+
+      &::after {
+        background-color: $brand-primary;
+        content: '';
+        width: 100px;
+        height: 5px;
+        position: absolute;
+        bottom: -16px;
+        left: calc(50% - 50px);
+      }
+    }
+
+    .feature-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: $block-spacing-xlarge;
+
+      .feature-box {
+        text-align: center;
+        margin: 0 30px;
+        padding-bottom: $block-spacing-small;
+        border-bottom: 1px solid #fff;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        h3 {
+          font-size: $font-size-28;
+          margin-bottom: $block-spacing-tiny;
+        }
+
+        p {
+          font-size: $font-size-22;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 80px;
+    text-align: center;
+
+    .info {
+      font-size: $font-size-base;
+      font-weight: $font-weight-slim;
+      color: $gray-dark;
+      text-align: left;
+      max-width: 410px;
+      margin: 40px auto 0 auto;
+
+      a {
+        color: $brand-primary;
+
+        &:hover, &:active {
+          color: $gray-dark;
+        }
+      }
+    }
+
+    .note {
+      display: inline-block;
+      text-align: left;
+      border: 1px solid #E1E0DB;
+      padding: $block-spacing-small $block-spacing-base;
+      margin-top: $block-spacing-large;
+
+      .title {
+        font-size: $font-size-18;
+        margin-bottom: $block-spacing-tiny;
+      }
+
+      ul {
+        li {
+          background-image: url(../../assets/images/BG_li.svg);
+          background-position: left 8px;
+          background-repeat: no-repeat;
+          background-size: 6px;
+          font-size: $font-size-base;
+          font-weight: $font-weight-slim;
+          color: $gray-dark;
+          padding-left: 16px;
+        }
+      }
+    }
+
+    .btn-box {
+      a.btn {
+        width: 30%;
+        font-size: $font-size-21;
+        font-weight: $font-weight-bold;
+        padding-top: 24px;
+        padding-bottom: 24px;
+      }
+    }
+  }
+}
+
+// signup
+.member.landing {
+  .page-main {
+    width: 90%;
+    margin-left: calc(50% - 45%);
+
+    .member-table__title {
+      em {
+        color: $brand-warning;
+        margin-left: 3px;
+      }
+    }
+
+    .input-text {
+      padding: $spacing-tiny $spacing-small;
+      min-width: 400px;
+    }
+
+    .content-footer {
+      display: block;
+      border-top: 1px solid $bg-defualt;
+      padding-top: $block-spacing-large;
+
+      .btn {
+        float: right;
+      }
+    }
+  }
+}
+
+
+// RWD
+@media (max-width: $screen-lg-min) /*1200*/ {
+  
+}
+
+@media (max-width: $screen-md-min) /*970*/ {
+}
+
+@media (max-width: $screen-sm-min) /*769*/ {
+  .landing-highlight {
+    padding-top: 40px;
+
+    h1 {
+      color: #fff;
+      font-size: $font-size-36;
+      line-height: 1.3;
+    }
+
+    &__footer {
+      height: 10px;
+      margin-top: 30px;
+    }
+  }
+
+  .landing-main {
+    .container>.row {
+      padding: 0 $block-spacing-base;
+    }
+
+    &__info {
+      p {
+        font-size: $font-size-18;
+        font-weight: $font-weight-slim;
+      }
+    }
+
+    &__feature {
+      .feature-content {
+        display: block;
+
+        .feature-box {
+          margin: 0;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &__footer {
+      .btn-box {
+        a.btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .member.landing {
+    .input-text {
+      min-width: 100% !important;
+      width: 100% !important;
+      margin-top: $spacing-tiny;
+    }
+
+    .input-select {
+      width: 100%;
+
+      select {
+        min-width: 100% !important;
+        width: 100% !important;
+        margin-top: $spacing-tiny;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 320px) {
+}

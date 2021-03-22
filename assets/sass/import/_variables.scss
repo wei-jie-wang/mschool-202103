@@ -1,0 +1,198 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+// Color system
+$brand-primary-50:            #FFECF0 !default;
+$brand-primary-100:           #FFD0D6 !default;
+$brand-primary-200:           #F69FA1 !default; //V
+$brand-primary-300:           #F0797C !default;
+$brand-primary-400:           #FC5A5A !default; //S
+$brand-primary-500:           #FF4940 !default;
+$brand-primary-600:           #F44140 !default;
+$brand-primary-700:           #E13739 !default;
+$brand-primary-800:           #D43032 !default;
+$brand-primary-900:           #C52426 !default;
+
+$brand-secondary-50:          #FFFBEE !default;
+$brand-secondary-100:         #FCF5E4 !default;
+$brand-secondary-200:         #F6EFD5 !default;
+$brand-secondary-300:         #E3DCBE !default;
+$brand-secondary-400:         #DBD3B4 !default;
+$brand-secondary-500:         #D4CCAD !default;
+$brand-secondary-600:         #C9C09C !default; //V
+$brand-secondary-700:         #B7AC82 !default;
+$brand-secondary-800:         #B8A174 !default; //S
+$brand-secondary-900:         #8E7950 !default;
+
+$brand-project-50:            #e6f2f7 !default;
+$brand-project-100:           #c2deee !default;
+$brand-project-200:           #9fcae3 !default; //V
+$brand-project-300:           #80b5d6 !default;
+$brand-project-400:           #6ba5cf !default;
+$brand-project-500:           #5b97c8 !default;
+$brand-project-600:           #528abb !default;
+$brand-project-700:           #4779a9 !default;
+$brand-project-800:           #3e6997 !default;
+$brand-project-900:           #304c77 !default; //S
+
+
+// Brand color
+$brand-primary:               $brand-primary-400;
+$brand-primary-variant:       $brand-primary-200;
+$brand-secondary:             $brand-secondary-800;
+$brand-secondary-variant:     $brand-secondary-600;
+$brand-project:               $brand-project-900;
+$brand-project-variant:       $brand-project-200;
+$brand-warning:               #E43248 !default;
+$brand-info:                  #45CBD2 !default;
+
+// Gray
+$gray-darker:                #000 !default;
+$gray-dark:                  #444 !default;
+$gray-middle:                #555 !default;
+$gray-light:                 #888 !default;
+$gray-lighter:               #AAAAA0 !default;
+
+// Background
+$bg-defualt:                 #EFEEEA !default;
+
+// Scaffolding
+$body-bg:                      $bg-defualt !default;
+$text-color:                   $gray-darker !default;
+$link-color:                   $gray-darker !default;
+$link-hover-color:             $brand-primary !default;
+$link-hover-decoration:        none !default;
+
+
+
+
+//== Typography
+$font-family-sans-serif:  -apple-system, BlinkMacSystemFont, 'Noto Sans TC', "Microsoft JhengHei", 'Roboto', "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-serif:       'Noto Serif TC', 'Lusitana' !default;
+//** For `<code>`, `<kbd>`, and `<pre>`.
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-12:            0.75rem !default;
+$font-size-base:          1rem !default;
+$font-size-14:            0.875rem !default;
+$font-size-18:            1.125rem !default;
+$font-size-20:            1.25rem !default;
+$font-size-21:            1.3125rem !default;
+$font-size-22:            1.375rem !default;
+$font-size-24:            1.5rem !default;
+$font-size-28:            1.75rem !default;
+$font-size-30:            1.875rem !default;
+$font-size-36:            2.25rem !default;
+$font-size-50:            3.125rem !default;
+
+$font-size-h1:            $font-size-36;
+$font-size-h2:            $font-size-28;
+$font-size-h3:            $font-size-24;
+$font-size-h4:            $font-size-21;
+$font-size-h5:            $font-size-20;
+$font-size-h6:            $font-size-18;
+
+$font-weight-slim:        300 !default;
+$font-weight-normal:      400 !default; // Lusitana just
+$font-weight-medium:      500 !default;
+$font-weight-bold:        700 !default; // Lusitana just
+$font-weight-black:       900 !default;
+
+$line-height-base:        1.75 !default;
+
+
+// Letter-spacing
+$letter-spacing-default: 0 !default;
+$letter-spacing-little:  ceil(($font-size-base * 0.0625)) !default; // ~1px
+$letter-spacing-loose:   ceil(($font-size-base * 0.1875)) !default; // ~1px
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    inherit !default;
+$headings-font-weight:    500 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
+
+
+//== Media queries breakpoints
+//
+// Extra small screen / phone
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+// Small screen / tablet
+$screen-sm:                  769px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+
+//== Grid system
+//** Number of columns in the grid.
+$grid-columns:              12 !default;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         36px !default;
+@media (max-width: $screen-md-min) /*992*/ {
+  $grid-gutter-width: 24px !default;
+}
+@media (max-width: $screen-sm-min) /*769*/ {
+  $grid-gutter-width: 16px !default;
+}
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     $screen-sm-min !default;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+
+//== Container sizes
+// Small screen / tablet
+$container-tablet:             (714px + $grid-gutter-width) !default; //720
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+// Medium screen / desktop
+$container-desktop:            (934px + $grid-gutter-width) !default; //940
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+// Large screen / wide desktop
+$container-large-desktop:      (1164px + $grid-gutter-width) !default; //1170
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;
+
+
+//
+// Animation
+// --------------------------------------------------
+
+$transition-base:         .3s !default;
+$transition-slow:         .8s !default;
+
+
+
+//
+// Spacing
+// --------------------------------------------------
+$spacing-tiny:            8px;
+$spacing-small:           16px;
+$spacing-base:            24px;
+$spacing-large:           36px;
+$spacing-xlarge:          64px;
+
+$block-spacing-tiny:      10px;
+$block-spacing-small:     20px;
+$block-spacing-base:      30px;
+$block-spacing-large:     40px;
+$block-spacing-xlarge:    60px;
