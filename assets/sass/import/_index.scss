@@ -94,6 +94,51 @@
   margin-bottom: $block-spacing-xlarge;
 }
 
+.index-more {
+  background-color: #F7F5F0;
+  padding: 60px 0;
+  
+  .index-more__box {
+    float: left;
+    width: calc((100% / 3) - 24px);
+    margin: 0 18px;
+    
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .card {
+      border-bottom: 1px dotted #FC5A5A;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+
+      &__data {
+        span {
+          color: #B8A174;
+          font-size: 18px;
+          font-weight: 300;
+
+          &:hover {
+            color: #FC5A5A;
+          }
+        }
+      }
+
+      a:hover {
+        .card__data {
+          span {
+            color: #FC5A5A;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 // RWD
 @media (max-width: $screen-lg-min) /*1200*/ {
