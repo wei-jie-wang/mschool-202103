@@ -1059,7 +1059,21 @@ main.member {
   }
 }
 
+//登入註冊
+.lr-gi {
+  display: flex;
 
+  &__img {
+    background-image: url(../../assets/images/BG_lg.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    width: 40%;
+  }
+
+  &__content {
+
+  }
+}
 
 // RWD
 @media (max-width: $screen-lg-min) /*1200*/ {
