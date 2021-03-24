@@ -7649,6 +7649,18 @@ main.member {
   padding-top: 36px;
 }
 
+.videoList-highlight.ms .videoList-highlight__title .container .section-tool__info .tags span.active a {
+  background-color: #FC5A5A;
+}
+
+.videoList-highlight.ms .videoList-highlight__title .container .section-tool__info .tags span a {
+  background-color: #DCD3B4;
+}
+
+.videoList-highlight.ms .videoList-highlight__title .container .section-tool__info .tags span a:hover {
+  background-color: #FC5A5A;
+}
+
 .videoList-highlight h1 {
   font-size: 2.5rem;
   color: #fff;
@@ -9190,6 +9202,39 @@ body.swipe .goTop {
 
 .side-fix-box .share-bo__line {
   background-image: url(../../assets/images/icon-LINE.svg);
+}
+
+.video-lists.ms .lists-video .card.b-preview .card__img::before {
+  left: 0;
+}
+
+.video-lists.ms .lists-video .card__img {
+  width: 35%;
+}
+
+.video-lists.ms .lists-video .card__data {
+  width: 65%;
+}
+
+.video-lists.ms .lists-video .card__data .video-list ul li::before {
+  background-image: url(../../assets/images/icon_videoList.svg);
+  background-color: #FC5A5A;
+}
+
+.video-lists.ms .lists-video .card__data .video-list ul li:hover {
+  background-color: #FFECF0;
+}
+
+.video-lists.ms .lists-video .card__data .video-list ul li a {
+  color: #000;
+}
+
+.video-lists.ms .lists-video .card__data .video-list ul li a:hover {
+  color: #FC5A5A;
+}
+
+.video-lists.ms .lists-video .card__data .video-list ul li a::before {
+  display: none;
 }
 
 .video-lists .row {
