@@ -41,14 +41,15 @@
               <li><a href="company_learners.html">學員列表</a></li>
               <li><a href="company_buy.html">購買紀錄</a></li>
               <li><a href="company_dashboard.html">儀表板</a></li>
-              <li class="active"><a href="company_assign.html">指派專題</a></li>
+              <li class="active"><a href="company_assign.html">指派必修</a></li>
+              <li><a href="company_assign-learning.html">指定學習記錄</a></li>
             </ul>
           </nav>
         </aside>
 
         <div class="page-main">
           <div class="section-title">
-            <h2>指派專題</h2>
+            <h2>指派必修</h2>
           </div>
 
           <div class="page-main__content">
@@ -72,6 +73,23 @@
               </tr>
 
               <tr>
+                <td class="member-table__title">學員Email</td>
+                <td class="edit-input">
+                  <input type="text" placeholder="" class="input-text">
+
+                  <span class="e-info">按Enter進行多個會員帳號間隔</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="member-table__title">批次匯入</td>
+                <td class="edit-file">
+                  <label for="file-upload" class="custom-file-upload btn btn--small btn-border-primary">匯入</label>
+                  <input id="file-upload" type="file"/>
+                </td>
+              </tr>
+
+              <tr>
                 <td class="member-table__title">已指派專題</td>
                 <td class="edit-assign">
                   <div class="box">
@@ -80,13 +98,17 @@
                     <div class="chips">別怕當個壞主管</div>
                     <div class="chips">別怕當個壞主管</div>
                   </div>
+
+                  <span class="e-info">最多只能指派6個專題</span>
                 </td>
               </tr>
 
               <tr>
-                <td class="member-table__title">指派主題名稱</td>
+                <td class="member-table__title">為此次指定命名</td>
                 <td class="edit-input">
                   <input type="text" value="業務必修專班" name="name" class="input-text">
+
+                  <span class="e-info">只有您看得到</span>
                 </td>
               </tr>
               
