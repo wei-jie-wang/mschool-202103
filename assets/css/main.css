@@ -6911,20 +6911,6 @@ main.member {
   margin-bottom: 16px;
 }
 
-.lr-gi {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.lr-gi__img {
-  background-image: url(../../assets/images/BG_lg.jpg);
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  width: 40%;
-}
-
 @media (max-width: 769px) {
   main.member {
     background-position-y: -18px;

@@ -1,0 +1,139 @@
+// Sans serif
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700,900');
+// Serif
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lusitana:400,700');
+
+
+// Core variables and mixins
+@import "import/variables";
+@import "import/mixins";
+
+// Reset
+@import "import/normalize";
+@import "import/print";
+
+// Core CSS
+@import "import/scaffolding";
+@import "import/type";
+@import "import/grid";
+@import "import/buttons";
+@import "import/icons";
+@import "import/controls";
+@import "import/background";
+
+// Page
+@import "import/page";
+
+
+
+
+
+//登入註冊
+body {
+  padding: 0;
+}
+
+.lr-gi {
+  display: flex;
+  min-height: 100vh;
+
+  &__img {
+    background-image: url(../../assets/images/BG_lg.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    width: 46%;
+  }
+
+  &__content {
+
+  }
+}
+
+//footer
+.main-footer {
+  background-color: #fff;
+  width: 100%;
+  padding: $spacing-tiny 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      font-size: $font-size-14;
+      color: $gray-light;
+      padding: 0 $spacing-tiny;
+      
+      a {
+        color: $gray-light;
+
+        &:hover, &:active {
+          color: $brand-primary;
+        }
+      }
+    }
+  }
+
+  &__nav {
+    justify-content: flex-start;
+
+    li:first-child {
+      // padding-left: 0;
+    }
+  }
+
+  &__copyright {
+    justify-content: flex-end;
+
+    li:last-child {
+      // padding-right: 0;
+    }
+  }
+}
+
+
+// RWD
+@media (max-width: $screen-md-min) /*970*/ {
+  .main-footer {
+    text-align: center;
+
+    &__nav, &__copyright {
+      float: inherit;
+      display: inline-block;
+      line-height: 1;
+    }
+  }
+}
+
+@media (max-width: $screen-sm-min) /*769*/ {
+  .main-footer {
+    padding: 20px 0 50px 0;
+    z-index: 9999;
+    position: relative;
+
+    .row {
+      padding: 0 $spacing-base;
+    }
+
+    ul {
+      text-align: center;
+
+      li {
+        float: inherit;
+        display: inline-block;
+        margin-bottom: $spacing-tiny;
+      }
+    }
+    
+    &__copyright {
+      margin-top: $spacing-tiny;
+    }
+  }
+}
