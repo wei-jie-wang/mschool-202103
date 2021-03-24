@@ -26,7 +26,7 @@
   <![endif]-->
 </head>
 <body>
-  <header class="main-header video">
+  <header class="main-header index">
     <div class="container">
       <div class="row">
         <div class="main-header__logos">
@@ -38,30 +38,64 @@
     
         <div class="nav-box">
           <div class="main-header__member">
-            <div class="main-header__member--login">
-              <a href="profile.html"><i class="icon-member"></i>註冊 / 登入</a>
+            <div class="main-header__member--login" data-trid="57">
+              <i class="icon-member"></i><a href="register.html">註冊</a> / <a href="login.html">登入</a>
             </div>
+            <!-- <div class="main-header__member--signed">
+              <div class="member-data">
+                Hi, username<i class="icon-arrow-down"></i>
+              </div>
+              <div class="member-submenu">
+                <ul>
+                  <li><a href="profile.html">基本資料</a></li>
+                  <li><a href="progress.html">學習進度</a></li>
+                  <li><a href="bookmarks.html">收藏文章</a></li>
+                  <li><a href="buy.html">購買紀錄</a></li>
+                  <li class="company"><a href="company_profile.html"><i class="icon-member"></i>企業專區</a></li>
+                  <li><a href="">登出</a></li>
+                </ul>
+              </div>
+            </div> -->
           </div>
     
           <nav class="main-header__nav">
             <ul>
               <li id="submenu-book">
-                <a href="video-index.html">新書快讀</a>
+                <a href="m-video-list.html">新書快讀</a>
+              </li>
+
+              <li>
+                <a href="m-video-list.html">影音主題</a>
+              </li>
     
-                <!-- 優化新增 -->
-                <i class="icon-arrow-down active"></i>
+              <li id="submenu-course">
+                <a href="course.html">管理學程</a>
+    
+                <i class="icon-arrow-down"></i>
                 <div class="more">
-                  <div class="more__submenu show">
-                    <a href="video-list.html" class="">全部書單</a>
-                    <a href="#go-hot-videos" class="page-scroll">影片試閱</a>
-                    <a href="" class="">FAQ</a>
-                    <a href="" class="">優惠方案</a>
-                    <a href="" class="">音頻好禮</a>
+                  <div class="more__submenu">
+                    <a href="course-list.html" class="course-1">領導帶人</a>
+                    <a href="course-list.html" class="course-2">經營管理</a>
+                    <a href="course-list.html" class="course-3">實用技能</a>
+                    <a href="course-list.html" class="course-4">自我激勵</a>
+                    <a href="course-list.html" class="course-5">人力資源</a>
+                    <a href="course-list.html" class="course-6">業務銷售</a>
+                    <a href="course-list.html" class="course-7">行銷創意</a>
+                    <a href="course-list.html" class="course-8">成功案例</a>
+                    <a href="course-list.html" class="course-9">職涯規劃</a>
                   </div>
                 </div>
               </li>
+
+              <li>
+                <a href="items.html">CEO管理講堂</a>
+              </li>
+
+              <li>
+                <a href="items.html">名師一堂課</a>
+              </li>
             </ul>
-            <!-- <a href="landing.html" class="btn btn--small btn-primary">免費試閱</a> -->
+            <a href="landing.html" class="btn btn--small btn-primary">申請試用</a>
           </nav>
     
         </div>
@@ -79,23 +113,25 @@
     </div>
   </header>
 
-  <div id="highlight" class="video-highlight-article">
+  <div id="highlight" class="video-highlight-article ms">
     <div class="container">
       <div class="row">
         <div class="title">
           <h1>
             OKR做最重要的事
-            <a role="button" data-method="post" href="">
-              <div class="info-status ">已完成</div><!--完成加 active-->
-            </a>
           </h1>
         </div>
 
         <div class="video-article">
           <div class="video-article__video">
             <div class="video-container">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/EngNM0HmEiA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <img src="https://images.weserv.nl/?bg=white&w=864&h=486&t=letterbox&url=ssl%3Ai.vimeocdn.com%2Fvideo%2F949405359.jpg">
             </div>
+
+            <!-- <div class="flink-item audio">
+              <audio id="audio-player" class="btn btn--small" src="https://mschool.dev.ieon.tech/storage/video_articles/audio/gsFFantbSEbPPKOL5IK9Nd5blXN5CHxJQtvh3J5n.wav" controlslist="nodownload" controls="controls"></audio>
+              <a class="audio-speed-control" href="javascript:void(0)" data-speed="1.5"><button id="speed-btn">1.5X</button></a>
+            </div> -->
           </div>
 
           <div class="video-article__data">
@@ -117,29 +153,24 @@
                       ③ 如何導入OKR的管理方法？4大步驟如何導入
                     </a>
                   </li>
+                  <li>
+                    <a href="">
+                      ④ 如何導入OKR的管理方法？4大步驟如何導入
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      ⑤ 如何導入OKR的管理方法？4大步驟如何導入
+                    </a>
+                  </li>
                 </ul>
               </nav>
-            </div>
-
-            <div class="data-flink">
-              <div class="flink-item audio">
-                <audio id="audio-player" class="btn btn--small" src="https://mschool.dev.ieon.tech/storage/video_articles/audio/gsFFantbSEbPPKOL5IK9Nd5blXN5CHxJQtvh3J5n.wav" controlslist="nodownload" controls="controls"></audio>
-                <a class="audio-speed-control" href="javascript:void(0)" data-speed="1.5"><button id="speed-btn">1.5X</button></a>
-              </div>
-
-              <div class="flink-item download">
-                <a href=""><i></i>下載本書簡報</a>
-              </div>
-
-              <div class="flink-item listen">
-                <a href=""><i></i>純聽版</a>
-              </div>
             </div>
           </div>
         </div>
 
         <div class="video-highlight-article__btns">
-          <a href="" class="btn btn--small btn-primary all-books">全部書單</a>
+          <a href="" class="btn btn--small btn-primary all-books">影片主題列表</a>
           <span class="scroll-d"></span>
 
           <div class="share-bo">
@@ -258,14 +289,14 @@
     </article>
 
 
-    <div class="videoArticle-more">
+    <div class="videoArticle-more ms">
       <div class="videoArticle-more__item videoArticle-more__item--pre">
         <a href="">
           <div class="videoArticle-more__item__img">
-            <img src="assets/images/IMG_bookCover.jpg" alt="OKR做最重要的事">
+            <img src="https://images.weserv.nl/?bg=white&w=864&h=486&t=letterbox&url=ssl%3Ai.vimeocdn.com%2Fvideo%2F1082549346.jpg">
           </div>
           <div class="videoArticle-more__item__data">
-            <span>上一本書</span>
+            <span>上一部影片</span>
             <h3>BUSINESS商業思維</h3>
           </div>
         </a>
@@ -274,10 +305,10 @@
       <div class="videoArticle-more__item videoArticle-more__item--next">
         <a href="">
           <div class="videoArticle-more__item__img">
-            <img src="assets/images/IMG_bookCover.jpg" alt="OKR做最重要的事">
+            <img src="https://images.weserv.nl/?bg=white&w=864&h=486&t=letterbox&url=ssl%3Ai.vimeocdn.com%2Fvideo%2F1082549346.jpg">
           </div>
           <div class="videoArticle-more__item__data">
-            <span>下一本書</span>
+            <span>下一部影片</span>
             <h3>BUSINESS商業思維BUSINESS商業思維</h3>
           </div>
         </a>
@@ -306,7 +337,7 @@
     </div>
   </footer>
 
-  <div class="side-fix-box">
+  <div class="side-fix-box ms">
     <div class="share-bo">
       <span>SHARE</span>
       <a href="" class="share-bo__fb"></a>

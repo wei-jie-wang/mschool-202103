@@ -318,6 +318,26 @@
   background-attachment: fixed;
   padding-bottom: 60px;
 
+  &.ms {
+    background-color: $brand-primary;
+
+    .video-article__data .data-menu {
+      nav {
+        ul {
+          li {
+            a {
+              padding: 19px 16px 14px 48px;
+            }
+          }
+        }
+      }
+    }
+
+    .video-highlight-article__btns a.all-books {
+      background-color: #000;
+    }
+  }
+
   .title {
     font-size: 2.5rem;
     color: #fff;
@@ -1555,6 +1575,12 @@
   bottom: -100px;
   transition: $transition-base;
 
+  &.ms {
+    .videoArticle-more__item__img {
+      width: 156px;
+    }
+  }
+
   &__item {
     float: left;
     width: 50%;
@@ -1661,6 +1687,22 @@ body.swipe {
 .side-fix-box {
   position: fixed;
   right: 12px;
+
+  &.ms {
+    .share-bo {
+      text-align: center;
+  
+      span {
+        font-size: $font-size-12;
+        font-weight: 600;
+        color: $brand-secondary;
+      }
+  
+      &__fb, &__line {
+        background-color: $brand-secondary;
+      }
+    }
+  }
 
   &--active {
     top: 50%;
@@ -2868,6 +2910,31 @@ body.swipe {
   .video-highlight-article {
     padding-bottom: 0;
 
+    &.ms {
+      .video-article {
+        &__data {
+          background-color: $brand-primary;
+        
+          .data-menu nav ul li {
+            background-color: #fff;
+          
+            a {
+              color: #999;
+            }
+          }
+        }
+      }
+
+      .video-highlight-article__btns {
+        border-top: 1px solid $brand-primary;
+      }
+
+      .video-highlight-article__btns .share-bo .share-bo__fb,
+      .video-highlight-article__btns .share-bo .share-bo__line {
+        background-color: #B8A174;
+      }
+    }
+
     .title {
       margin: 24px 0 16px;
       
@@ -3017,6 +3084,8 @@ body.swipe {
         margin: 8px;
         width: 100%;
       }
+
+
 
       .share-bo {
         float: right;
