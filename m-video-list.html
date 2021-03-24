@@ -25,7 +25,7 @@
   <![endif]-->
 </head>
 <body>
-  <header class="main-header video">
+  <header class="main-header index">
     <div class="container">
       <div class="row">
         <div class="main-header__logos">
@@ -37,30 +37,64 @@
     
         <div class="nav-box">
           <div class="main-header__member">
-            <div class="main-header__member--login">
-              <a href="profile.html"><i class="icon-member"></i>註冊 / 登入</a>
+            <div class="main-header__member--login" data-trid="57">
+              <i class="icon-member"></i><a href="register.html">註冊</a> / <a href="login.html">登入</a>
             </div>
+            <!-- <div class="main-header__member--signed">
+              <div class="member-data">
+                Hi, username<i class="icon-arrow-down"></i>
+              </div>
+              <div class="member-submenu">
+                <ul>
+                  <li><a href="profile.html">基本資料</a></li>
+                  <li><a href="progress.html">學習進度</a></li>
+                  <li><a href="bookmarks.html">收藏文章</a></li>
+                  <li><a href="buy.html">購買紀錄</a></li>
+                  <li class="company"><a href="company_profile.html"><i class="icon-member"></i>企業專區</a></li>
+                  <li><a href="">登出</a></li>
+                </ul>
+              </div>
+            </div> -->
           </div>
     
           <nav class="main-header__nav">
             <ul>
               <li id="submenu-book">
-                <a href="video-index.html">新書快讀</a>
+                <a href="m-video-list.html">新書快讀</a>
+              </li>
+
+              <li>
+                <a href="m-video-list.html">影音主題</a>
+              </li>
     
-                <!-- 優化新增 -->
-                <i class="icon-arrow-down active"></i>
+              <li id="submenu-course">
+                <a href="course.html">管理學程</a>
+    
+                <i class="icon-arrow-down"></i>
                 <div class="more">
-                  <div class="more__submenu show">
-                    <a href="video-list.html" class="">全部書單</a>
-                    <a href="#go-hot-videos" class="page-scroll">影片試閱</a>
-                    <a href="" class="">FAQ</a>
-                    <a href="" class="">優惠方案</a>
-                    <a href="" class="">音頻好禮</a>
+                  <div class="more__submenu">
+                    <a href="course-list.html" class="course-1">領導帶人</a>
+                    <a href="course-list.html" class="course-2">經營管理</a>
+                    <a href="course-list.html" class="course-3">實用技能</a>
+                    <a href="course-list.html" class="course-4">自我激勵</a>
+                    <a href="course-list.html" class="course-5">人力資源</a>
+                    <a href="course-list.html" class="course-6">業務銷售</a>
+                    <a href="course-list.html" class="course-7">行銷創意</a>
+                    <a href="course-list.html" class="course-8">成功案例</a>
+                    <a href="course-list.html" class="course-9">職涯規劃</a>
                   </div>
                 </div>
               </li>
+
+              <li>
+                <a href="items.html">CEO管理講堂</a>
+              </li>
+
+              <li>
+                <a href="items.html">名師一堂課</a>
+              </li>
             </ul>
-            <!-- <a href="landing.html" class="btn btn--small btn-primary">免費試閱</a> -->
+            <a href="landing.html" class="btn btn--small btn-primary">申請試用</a>
           </nav>
     
         </div>

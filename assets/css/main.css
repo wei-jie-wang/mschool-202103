@@ -3864,6 +3864,10 @@ body.info-404 footer.main-footer {
   margin-bottom: 60px;
 }
 
+.index-assign .section-title span {
+  margin-left: 130px;
+}
+
 .index-more {
   background-color: #F7F5F0;
   padding: 60px 0;
@@ -3901,6 +3905,174 @@ body.info-404 footer.main-footer {
 
 .index-more .index-more__box .card a:hover .card__data span {
   color: #FC5A5A;
+}
+
+.index-bottom {
+  margin-top: 60px;
+}
+
+.index-bottom .index-quickread {
+  float: left;
+  width: calc((100% / 3) * 2);
+  margin-right: 36px;
+}
+
+.index-bottom .index-quickread .index-quickread-con {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px 32px;
+}
+
+.index-bottom .index-quickread .index-quickread-con .index-quickread__hi {
+  background-color: #EFEEEA;
+  padding: 14px 16px;
+}
+
+.index-bottom .index-quickread .index-quickread-con .index-quickread__hi a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.index-bottom .index-quickread .index-quickread-con .index-quickread__hi a .hi-img {
+  height: 200px;
+}
+
+.index-bottom .index-quickread .index-quickread-con .index-quickread__hi a .hi-img img {
+  height: 100%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.index-bottom .index-quickread .index-quickread-con .index-quickread__hi a .hi-data {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 40px 0 80px;
+}
+
+.index-bottom .index-quickread .index-quickread-con .index-quickread__hi a .hi-data h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  position: relative;
+}
+
+.index-bottom .index-quickread .index-quickread-con .index-quickread__hi a .hi-data h3::before {
+  content: '';
+  background-image: url(../../assets/images/icon_faq-item.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 26px;
+  position: absolute;
+  top: 7px;
+  left: -28px;
+}
+
+.index-bottom .index-quickread .index-quickread-con .index-quickread__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.index-bottom .index-quickread .index-quickread-con .index-quickread__list .list-item {
+  margin: 10px 0 0 0;
+  width: calc(95% / 3);
+}
+
+.index-bottom .index-quickread .index-quickread-con .index-quickread__list .list-item a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.index-bottom .index-quickread .index-quickread-con .index-quickread__list .list-item a:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.index-bottom .index-quickread .index-quickread-con .index-quickread__list .list-item a::before {
+  content: '';
+  background-image: url(../../assets/images/icon_index-video.svg);
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: calc(50% - 24px);
+  top: calc(50% - 24px);
+  z-index: 9;
+}
+
+.index-bottom .index-quickread .index-quickread-con .index-quickread__list .list-item a img {
+  width: 100%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.index-bottom .index-fiveSec {
+  float: left;
+  width: calc((100% / 3) - 36px);
+}
+
+.index-bottom .index-fiveSec .fiveSec-data__title {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px 24px;
+}
+
+.index-bottom .index-fiveSec .fiveSec-data__title h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.index-bottom .index-fiveSec .fiveSec-data__list ul {
+  counter-reset: num;
+}
+
+.index-bottom .index-fiveSec .fiveSec-data__list ul li {
+  font-size: 18px;
+  margin: 16px 0 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.index-bottom .index-fiveSec .fiveSec-data__list ul li::before {
+  counter-increment: num;
+  content: counter(num) ". ";
+  font-family: "Noto Serif TC", "Lusitana";
+  font-size: 36px;
+  color: #B8A174;
+  line-height: 1;
+  margin-right: 8px;
+}
+
+.index-bottom .index-fiveSec .fiveSec-data__list ul li a {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #fff;
+  display: block;
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -3956,6 +4128,72 @@ body.info-404 footer.main-footer {
   }
   .index-course {
     padding: 0 24px;
+  }
+  .index-assign {
+    padding: 0 24px;
+  }
+  .index-assign .section-title span {
+    margin: -2px 0 0 130px;
+    display: block;
+    line-height: 1.2;
+  }
+  .index-more {
+    padding: 0 24px;
+  }
+  .index-more .index-more__box {
+    float: inherit;
+    width: 100%;
+    margin: 0;
+  }
+  .index-more .index-more__box .section-title {
+    margin-top: 40px;
+  }
+  .index-bottom {
+    padding: 0 24px;
+  }
+  .index-bottom .index-quickread {
+    float: inherit;
+    width: 100%;
+  }
+  .index-bottom .index-quickread .index-quickread-con {
+    padding: 12px 16px;
+    margin-bottom: 40px;
+  }
+  .index-bottom .index-quickread .index-quickread-con .index-quickread__hi a {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .index-bottom .index-quickread .index-quickread-con .index-quickread__hi a .hi-img {
+    height: auto;
+    width: 100%;
+  }
+  .index-bottom .index-quickread .index-quickread-con .index-quickread__hi a .hi-img img {
+    height: auto;
+    width: 100%;
+  }
+  .index-bottom .index-quickread .index-quickread-con .index-quickread__hi a .hi-data {
+    padding: 0 8px 0 32px;
+  }
+  .index-bottom .index-quickread .index-quickread-con .index-quickread__hi a .hi-data h3 {
+    font-size: 21px;
+  }
+  .index-bottom .index-quickread .index-quickread-con .index-quickread__list .list-item a::before {
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    left: calc(50% - 12px);
+    top: calc(50% - 12px);
+  }
+  .index-bottom .index-fiveSec {
+    float: inherit;
+    width: 100%;
+  }
+  .index-bottom .index-fiveSec .fiveSec-data__title {
+    padding: 16px 16px;
+  }
+  .index-bottom .index-fiveSec .fiveSec-data__title h3 {
+    font-size: 21px;
   }
 }
 
