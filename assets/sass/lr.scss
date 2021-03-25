@@ -42,12 +42,147 @@ body {
   &__img {
     background-image: url(../../assets/images/BG_lg.jpg);
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: cover;
     width: 46%;
   }
 
   &__content {
+    background-color: #EFEEEA;
+    width: 54%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    .lr-gi-box {
+      width: 310px;
+      text-align: center;
+      // margin-top: 25%;
+
+      &__title {
+        margin-bottom: 24px;
+
+        .logo-mschool {
+          margin-bottom: 24px;
+        }
+
+        h2 {
+          margin-bottom: 16px;
+          font-size: 28px;
+          color: $brand-primary;
+        }
+
+        p {
+          font-size: 14px;
+          color: #444;
+          word-break: break-all;
+        }
+      }
+
+      &__data {
+        .mf-group {
+          margin-bottom: 16px;
+          position: relative;
+
+          &.tw {
+            display: flex;
+            justify-content: space-between;
+
+            .xs {
+              width: 15%;
+              height: 50px;
+              text-align: center;
+            }
+          }
+
+          .input-text {
+            width: 100%;
+            padding: 4px 12px;
+          }
+
+          .icon-password {
+            background-image: url(../../assets/images/icon_eye-close.svg);
+            background-color: #fff;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 9px;
+            right: 8px;
+            z-index: 9;
+            cursor: pointer;
+          }
+
+          .in-fo {
+            font-size: 14px;
+            color: #AAAAA0;
+            display: block;
+            margin-top: 8px;
+            text-align: left;
+          }
+        }
+
+        .data-footer {
+          .btns-box {
+            margin-bottom: 24px;
+
+            &.tw {
+              display: flex;
+              justify-content: space-between;
+
+              .btn {
+                width: 48%;
+              }
+            }
+
+            .btn {
+              width: 100%;
+            }
+          }
+
+          .f-info {
+            a {
+              font-size: 14px;
+              color: $brand-primary;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      &__footer {
+        margin-top: 24px;
+
+        .f-box {
+          background-color: #E2E1DD;
+          border-radius: 4px;
+          font-size: 15px;
+          color: #444;
+          padding: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          a {
+            font-size: 14px;
+            color: $brand-primary;
+            text-decoration: underline;
+          }
+        }
+
+        .f-remind {
+          margin-top: 24px;
+          font-size: 14px;
+          line-height: 1.75;
+          color: #444;
+          text-align: left;
+          
+          a {
+            font-size: 14px;
+            color: $brand-primary;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -113,6 +248,21 @@ body {
 }
 
 @media (max-width: $screen-sm-min) /*769*/ {
+  .lr-gi {
+    &__img {
+      display: none;
+    }
+
+    &__content {
+      width: 100%;
+      
+      .lr-gi-box {
+        width: 100%;
+        padding: 0 32px;
+      }
+    }
+  }
+
   .main-footer {
     padding: 20px 0 50px 0;
     z-index: 9999;

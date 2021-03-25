@@ -1284,7 +1284,7 @@ ol ol {
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 16px 24px;
+  padding: 16px 24px 14px 24px;
   border-radius: 50px;
   font-size: 1.125rem;
   font-weight: 500;
@@ -1311,6 +1311,7 @@ ol ol {
 .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
+  outline: 0;
 }
 
 .btn:hover, .btn:focus, .btn.focus {
@@ -1362,10 +1363,15 @@ ol ol {
   background-color: #FC5A5A;
   -webkit-box-shadow: 0 4px 0 #B13737;
           box-shadow: 0 4px 0 #B13737;
+  position: relative;
+  top: 0;
 }
 
 .btn-primary:hover, .btn-primaryactive {
-  background-color: #F69FA1;
+  background-color: #ef5858;
+  -webkit-box-shadow: 0 2px 0 #b13737;
+          box-shadow: 0 2px 0 #b13737;
+  top: 2px;
 }
 
 .btn-border-primary {
@@ -1455,10 +1461,17 @@ ol ol {
 
 .btn-cancel {
   background-color: #AAAAA0;
+  -webkit-box-shadow: 0 4px 0 dimgray;
+          box-shadow: 0 4px 0 dimgray;
+  position: relative;
+  top: 0;
 }
 
 .btn-cancel:hover, .btn-cancelactive {
-  opacity: .5;
+  background-color: #AAAAA0;
+  -webkit-box-shadow: 0 2px 0 dimgray;
+          box-shadow: 0 2px 0 dimgray;
+  top: 2px;
 }
 
 .btn-border-cancel {

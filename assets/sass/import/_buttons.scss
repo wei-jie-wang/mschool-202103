@@ -15,7 +15,7 @@
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: $spacing-small $spacing-base;
+  padding: 16px 24px 14px 24px;
   border-radius: 50px;
   font-size: $font-size-18;
   font-weight: $font-weight-medium;
@@ -33,6 +33,7 @@
     &:focus,
     &.focus {
       @include tab-focus;
+      outline: 0;
     }
   }
 
@@ -90,9 +91,14 @@
 .btn-primary {
   background-color: $brand-primary;
   box-shadow: 0 4px 0 #B13737;
+  position: relative;
+  top: 0;
 
   &:hover, &active {
-    background-color: $brand-primary-variant;
+    // background-color: $brand-primary-variant;
+    background-color: #ef5858;
+    box-shadow: 0 2px 0 #b13737;
+    top: 2px;
   }
 }
 .btn-border-primary {
@@ -176,11 +182,20 @@
   }
 }
 
+
 .btn-cancel {
   background-color: $gray-lighter;
+  box-shadow: 0 4px 0 rgb(105, 105, 105);
+  position: relative;
+  top: 0;
 
+  // &:hover, &active {
+  //   opacity: .5;
+  // }
   &:hover, &active {
-    opacity: .5;
+    background-color: $gray-lighter;
+    box-shadow: 0 2px 0 rgb(105, 105, 105);
+    top: 2px;
   }
 }
 .btn-border-cancel {
