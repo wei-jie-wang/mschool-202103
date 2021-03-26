@@ -244,6 +244,18 @@ label {
     justify-content: center;
   }
 
+  &.quiz {
+    .alerts__content {
+      .box-title {
+        p {
+          a {
+            color: $brand-primary;
+          }
+        }
+      }
+    }
+  }
+
   &__content {
     background-color: #fff;
     padding: 60px 60px 50px;
@@ -298,6 +310,18 @@ label {
           background-position-y: top;
           width: 60px;
           height: 60px;
+          display: inline-block;
+          margin-right: 16px;
+        }
+
+        &.icon-quiz::before {
+          content: '';
+          background-image: url(../../assets/images/icon_quiz--pink.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position-y: top;
+          width: 40px;
+          height: 40px;
           display: inline-block;
           margin-right: 16px;
         }
@@ -489,8 +513,6 @@ body.swipe .goTop {
       padding: 40px 30px 30px;
       width: 90vw;
       height: auto;
-      // top: calc(50% - 45vw);
-      // left: calc(50% - 45vw);
 
       .box-title {
         h2 {
@@ -514,6 +536,7 @@ body.swipe .goTop {
 
         .box-btns {
           display: flex;
+          justify-content: center;
 
           .btn {
             width: 50%;

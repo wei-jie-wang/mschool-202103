@@ -38,6 +38,109 @@
   }
 }
 
+.quiz-highlight {
+  text-align: center;
+  padding-top: 50px;
+
+  &__title {
+    overflow: hidden;
+
+    .container {
+      background-color: $bg-defualt;
+      box-shadow: 0 0 6px rgba(0,0,0,.15);
+
+      .title {
+        font-size: $font-size-36;
+        font-weight: $font-weight-medium;
+        margin: $block-spacing-large 0 $block-spacing-tiny;
+        line-height: 1.4;
+
+        span {
+          color: $brand-primary;
+        }
+
+        i.icon-quiz {
+          background-image: url(../../assets/images/icon-quiz--b.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 40px;
+          height: 40px;
+          display: inline-block;
+          position: relative;
+          top: 4px;
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+}
+
+.quiz-lists {
+  .row {
+    padding: 0 70px;
+    margin-top: $block-spacing-base;
+  }
+
+  .quiz-item {
+    margin-bottom: 32px;
+
+    &__title {
+      width: 100%;
+      height: 42px;
+      border-bottom: 4px solid #fff;
+      margin-bottom: 16px;
+      overflow: hidden;
+    
+      h3 {
+        float: left;
+        height: 42px;
+        border-bottom: 4px solid $brand-primary;
+        position: absolute;
+        padding-right: $spacing-base;
+        font-size: 28px;
+
+        span {
+          font-weight: 300;
+          color: #AAAAA0;
+          display: inline-block;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    &__option {
+      .q-options {
+        margin-bottom: 8px;
+        margin-left: 24px;
+
+        &.radio {
+        }
+
+        &.checkbox {
+          .input-checkbox::before {
+            margin-right: 16px;
+            position: relative;
+            top: 3px;
+          }
+        }
+      }
+    }
+
+    &__footer {
+      margin-top: 16px;
+      display: flex;
+      justify-content: flex-end;
+
+      .btn {
+        padding-left: 64px;
+        padding-right: 64px;
+      }
+    }
+  }
+}
+
+
+
 .courseList-highlight {
   text-align: center;
   padding-top: 50px;
@@ -237,6 +340,31 @@
 }
 
 @media (max-width: $screen-sm-min) /*769*/ {
+  .quiz-lists {
+    .row {
+      padding: 0 $spacing-base;
+    }
+  }
+
+  .quiz-lists .quiz-item__title {
+    height: inherit;
+    // border-bottom: 0;
+  }
+
+  .quiz-lists .quiz-item__title h3 {
+    float: inherit;
+    height: auto;
+    border-bottom: 0;
+    position: inherit;
+    padding-right: inherit;
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  .quiz-lists .quiz-item__option .q-options {
+    margin-left: 0;
+  }
+
   .course-highlight {
     margin-bottom: 50px;
     padding: 60px 0 50px;
