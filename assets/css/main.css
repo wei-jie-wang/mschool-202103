@@ -3699,7 +3699,7 @@ body.info-404 footer.main-footer {
 }
 
 .learning-map .lm-box {
-  background-color: #fff;
+  background-color: #ff0000;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3710,11 +3710,14 @@ body.info-404 footer.main-footer {
   background-image: url(../../assets/images/BG_lm-box.png);
   background-repeat: repeat-y;
   background-position: left top;
-  width: calc(100% / 5);
   min-height: 480px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.learning-map .lm-box .lm-box-item.title {
+.learning-map .lm-box .lm-box-item__title {
   background-color: #FC5A5A;
   background-image: none;
   color: #fff;
@@ -3727,24 +3730,33 @@ body.info-404 footer.main-footer {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 5%;
+  width: 15%;
 }
 
-.learning-map .lm-box .lm-box-item.title h3 {
+.learning-map .lm-box .lm-box-item__title h3 {
   font-size: 42px;
   margin-bottom: 6px;
   text-align: center;
 }
 
-.learning-map .lm-box .lm-box-item.title h4 {
+.learning-map .lm-box .lm-box-item__title h4 {
   font-size: 26px;
   text-align: center;
+}
+
+.learning-map .lm-box .lm-box-item__content {
+  width: 85%;
 }
 
 .learning-map .lm-box .lm-box-item.content {
   padding: 70px 32px;
 }
 
-.learning-map .lm-box .lm-box-item.content h4 {
+.learning-map .lm-box .lm-box-item.content .c-data {
+  width: 100%;
+}
+
+.learning-map .lm-box .lm-box-item.content .c-data h4 {
   font-size: 26px;
   font-weight: 700;
   border-bottom: 1px solid #EFEEEA;
@@ -3752,15 +3764,16 @@ body.info-404 footer.main-footer {
   margin-bottom: 12px;
 }
 
-.learning-map .lm-box .lm-box-item.content ul li {
+.learning-map .lm-box .lm-box-item.content .c-data ul li {
   font-size: 16px;
   line-height: 1.4;
   margin-bottom: 8px;
   position: relative;
   padding-left: 24px;
+  text-shadow: 0 0 4px #fff;
 }
 
-.learning-map .lm-box .lm-box-item.content ul li::before {
+.learning-map .lm-box .lm-box-item.content .c-data ul li::before {
   content: '';
   background-color: #FC5A5A;
   width: 6px;
@@ -10842,4 +10855,3 @@ body.swipe .goTop {
     height: 165px;
   }
 }
-/*# sourceMappingURL=main.css.map */

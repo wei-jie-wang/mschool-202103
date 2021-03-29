@@ -655,23 +655,24 @@ body.info-404 {
 //學習地圖
 .learning-map {
   .lm-box {
-    background-color: #fff;
+    background-image: ;
     display: flex;
 
     .lm-box-item {
       background-image: url(../../assets/images/BG_lm-box.png);
       background-repeat: repeat-y;
       background-position: left top;
-      width: calc(100% / 5);
       min-height: 480px;
+      display: flex;
     
-      &.title {
+      &__title {
         background-color: $brand-primary;
         background-image: none;
         color: #fff;
         display: flex;
         justify-content: center;
         padding-top: 5%;
+        width: 15%;
 
         h3 {
           font-size: 42px;
@@ -684,35 +685,44 @@ body.info-404 {
           text-align: center;
         }
       }
+
+      &__content {
+        width: 85%;
+      }
       
       &.content {
         padding: 70px 32px;
 
-        h4 {
-          font-size: 26px;
-          font-weight: 700;
-          border-bottom: 1px solid #EFEEEA;
-          padding-bottom: 8px;
-          margin-bottom: 12px;
-        }
+        .c-data  {
+          width: 100%;
 
-        ul {
-          li {
-            font-size: 16px;
-            line-height: 1.4;
-            margin-bottom: 8px;
-            position: relative;
-            padding-left: 24px;
-
-            &::before {
-              content: '';
-              background-color: $brand-primary;
-              width: 6px;
-              height: 6px;
-              display: inline-block;
-              position: absolute;
-              top: 7px;
-              left: 7px;
+          h4 {
+            font-size: 26px;
+            font-weight: 700;
+            border-bottom: 1px solid #EFEEEA;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+          }
+  
+          ul {
+            li {
+              font-size: 16px;
+              line-height: 1.4;
+              margin-bottom: 8px;
+              position: relative;
+              padding-left: 24px;
+              text-shadow: 0 0 4px #fff;
+  
+              &::before {
+                content: '';
+                background-color: $brand-primary;
+                width: 6px;
+                height: 6px;
+                display: inline-block;
+                position: absolute;
+                top: 7px;
+                left: 7px;
+              }
             }
           }
         }
