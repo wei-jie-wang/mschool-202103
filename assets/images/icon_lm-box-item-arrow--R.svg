@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_lm-box-item-arrow--R</title>
+    <g id="202102_優化" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4-1-2_學習地圖v3" transform="translate(-1364.000000, -911.000000)" fill="#000000">
+            <g id="Group-7-Copy" transform="translate(0.000000, 697.000000)">
+                <g id="arrow" transform="translate(1364.000000, 0.000000)">
+                    <g id="icon_lm-box-item-arrow--R" transform="translate(0.000000, 214.000000)">
+                        <path d="M26.5,31.6887302 L10.6987314,15.6443651 C9.85259539,14.7852116 8.48073794,14.7852116 7.63460197,15.6443651 C6.78846601,16.5035185 6.78846601,17.8964815 7.63460197,18.7556349 L24.9679353,36.3556349 C25.8140713,37.2147884 27.1859287,37.2147884 28.0320647,36.3556349 L45.365398,18.7556349 C46.211534,17.8964815 46.211534,16.5035185 45.365398,15.6443651 C44.5192621,14.7852116 43.1474046,14.7852116 42.3012686,15.6443651 L26.5,31.6887302 Z" id="Path_1" transform="translate(26.500000, 26.000000) rotate(-90.000000) translate(-26.500000, -26.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
