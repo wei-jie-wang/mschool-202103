@@ -6459,6 +6459,15 @@ main.member {
   margin: 4px 0 0 0;
 }
 
+.page-main__content .member-table tr td .e-info a {
+  color: #FC5A5A;
+  text-decoration: underline;
+}
+
+.page-main__content .member-table tr td .e-info a:hover {
+  color: #000;
+}
+
 .page-main__content .member-table tr td .cancel-order {
   margin-top: 4px;
 }
@@ -7707,6 +7716,80 @@ main.member {
 .edit-file input[type=file]::file-selector-button:hover {
   background-color: #FC5A5A;
   color: #fff;
+}
+
+.select2 {
+  margin-left: 0 !important;
+  color: #000;
+}
+
+.select2 span {
+  margin-left: 0 !important;
+}
+
+.select2-container--default .select2-selection--multiple {
+  border: 1px solid #EFEEEA;
+  border-radius: 0;
+  min-width: 200px;
+  min-height: 37px;
+  background: transparent;
+  background-image: url(../../assets/images/icon_select.svg);
+  background-repeat: no-repeat;
+  background-size: 9px;
+  background-position-x: calc(100% - 9px);
+  background-position-y: calc(50% - 2px);
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-size: 1.125rem;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  border: 1px solid #EFEEEA;
+  border-radius: 1px;
+  padding: 2px 16px 2px 8px;
+  padding-right: 36px;
+}
+
+.selection {
+  line-height: 1;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #FC5A5A;
+  display: inline-block;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 6px 16px 6px 16px;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  margin: 4px;
+  border: 0;
+  line-height: normal;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  float: right;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 2px;
+  margin-left: 4px !important;
+  text-indent: -5000px;
+  background-image: url(../../assets/images/icon-chips.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+  background-image: url(../../assets/images/icon-chips--active.svg);
 }
 
 @media (max-width: 769px) {
