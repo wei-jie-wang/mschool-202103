@@ -7627,20 +7627,86 @@ main.member {
   }
 }
 
-input[type="file"] {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+.edit-file input[type=file]::-webkit-file-upload-button {
+  background-color: #fff;
+  color: #FC5A5A;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  border-radius: 50px;
+  line-height: 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  display: inline;
+  padding: 10px 32px 8px 32px;
+  border: 1px solid #FC5A5A;
+  margin-right: 8px;
 }
 
-.edit-file .custom-file-upload {
+.edit-file input[type=file]::file-selector-button {
+  background-color: #fff;
+  color: #FC5A5A;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  border-radius: 50px;
+  line-height: 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
   display: inline;
-  padding: 8px 32px;
+  padding: 10px 32px 8px 32px;
+  border: 1px solid #FC5A5A;
+  margin-right: 8px;
+}
+
+.edit-file input[type=file]::-webkit-file-upload-button:hover {
+  background-color: #FC5A5A;
+  color: #fff;
+}
+
+.edit-file input[type=file]::file-selector-button:hover {
+  background-color: #FC5A5A;
+  color: #fff;
 }
 
 @media (max-width: 769px) {
