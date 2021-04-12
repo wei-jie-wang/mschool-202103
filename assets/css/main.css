@@ -7792,6 +7792,11 @@ main.member {
   background-image: url(../../assets/images/icon-chips--active.svg);
 }
 
+.select2-dropdown {
+  width: auto !important;
+  min-width: 200px;
+}
+
 @media (max-width: 769px) {
   .edit-file {
     padding: 5px 0;
