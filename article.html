@@ -420,9 +420,16 @@
         return false;
       });
       $('main').bind('click', function(event) {
-        $('.article-highlight .article-highlight__title').slideUp("slow");
+        $('.article-highlight .article-highlight__title').slideUp();
         return false;
       });
+    });
+
+    // 專題列表停留秒數後消失
+    $(document).ready(function(){
+      window.setTimeout(function(){
+        $('.article-highlight .article-highlight__title').slideUp();
+      }, 8000);
     });
 
 
