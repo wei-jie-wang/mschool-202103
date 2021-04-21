@@ -242,6 +242,15 @@ main.member {
             display: block;
             color: $brand-primary;
             margin: 4px 0 0 0;
+
+            a {
+              color: $brand-primary;
+              text-decoration: underline;
+
+              &:hover {
+                color: #000;
+              }
+            }
           }
 
           .cancel-order {
@@ -1457,24 +1466,147 @@ main.member {
 }
 
 
-input[type="file"] {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
-}
-
 .edit-file {
-  .custom-file-upload {
+  input[type=file]::-webkit-file-upload-button {
+    background-color: #fff;
+    color: $brand-primary;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    border-radius: 50px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
     display: inline;
-    padding: 8px 32px;
+    padding: 10px 32px 8px 32px;
+    border: 1px solid $brand-primary;
+    margin-right: 8px;
+  }
+
+  input[type=file]::file-selector-button {
+    background-color: #fff;
+    color: $brand-primary;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    border-radius: 50px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+    display: inline;
+    padding: 10px 32px 8px 32px;
+    border: 1px solid $brand-primary;
+    margin-right: 8px;
+  }
+
+  input[type=file]::-webkit-file-upload-button:hover {
+    background-color: $brand-primary;
+    color: #fff;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background-color: $brand-primary;
+    color: #fff;
   }
 }
 
+// select2
+.select2 {
+  margin-left: 0 !important;
+  color: #000;
+
+  span {
+    margin-left: 0 !important;
+  }
+}
+
+.select2-container--default .select2-selection--multiple {
+  border: 1px solid #EFEEEA;
+  border-radius: 0;
+  min-width: 200px;
+  min-height: 37px;
+
+  background: transparent;
+  background-image: url(../../assets/images/icon_select.svg);
+  background-repeat: no-repeat;
+  background-size: 9px;
+  background-position-x: calc(100% - 9px);
+  background-position-y: calc(50% - 2px);
+  border: none;
+  appearance: none;
+  font-size: 1.125rem;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  border: 1px solid #EFEEEA;
+  border-radius: 1px;
+  padding: 2px 16px 2px 8px;
+  padding-right: 36px;
+}
+
+.selection {
+  line-height: 1;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #FC5A5A;
+  display: inline-block;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 6px 16px 6px 16px;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  margin: 4px;
+  border: 0;
+  line-height: normal;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  float: right;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 2px;
+  margin-left: 4px !important;
+  text-indent: -5000px;
+  
+  background-image: url(../../assets/images/icon-chips.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  transition: $transition-base;
+
+  &:hover {
+    background-image: url(../../assets/images/icon-chips--active.svg);
+  }
+}
+
+.select2-dropdown {
+  width: auto !important;
+  min-width: 200px;
+}
 
 @media (max-width: $screen-sm-min) /*769*/ {
   .edit-file {

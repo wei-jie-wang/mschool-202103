@@ -213,11 +213,16 @@
 
       .index-quickread__list {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
+        justify-content: start;
 
         .list-item {
-          margin: 10px 0 0 0;
+          margin: 10px 20px 0 0;
           width: calc(95% / 3);
+
+          &:last-child {
+            margin-right: 0;
+          }
 
           a {
             position: relative;

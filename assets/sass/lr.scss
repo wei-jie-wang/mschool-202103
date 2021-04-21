@@ -109,6 +109,10 @@ body {
             right: 8px;
             z-index: 9;
             cursor: pointer;
+
+            &--show {
+              background-image: url(../../assets/images/icon_eye.svg);
+            }
           }
 
           .in-fo {

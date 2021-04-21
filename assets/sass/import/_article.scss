@@ -70,7 +70,7 @@
     width: 100%;
     overflow-y: scroll;
     height: calc(25px * 9);
-    display: none;
+    // display: none;
 
     ul {
       margin-top: $block-spacing-small;
@@ -609,7 +609,7 @@ main {
 @media (max-width: $screen-sm-min) /*769*/ {
   body.swipe {
     .article-highlight {
-      top: 0;
+      top: 0px;
     }
   }
 
@@ -619,7 +619,7 @@ main {
 
   .article-highlight {
     padding: $block-spacing-tiny 0;
-    top: -1000px;
+    top: 56px;
     transition: 2s;
 
     &__box {
@@ -697,7 +697,7 @@ main {
   main {
     .article {
       width: 100%;
-      margin-top: 35px;
+      margin-top: 64px;
 
       &__head {
         h4 {
