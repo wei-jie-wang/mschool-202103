@@ -85,16 +85,17 @@
         }
 
         .more {
-          float: right;
+          float: left;
           cursor: pointer;
+          position: relative;
 
           &__submenu {
             background-color: #fff;
             width: 390px;
             box-shadow: 0 3px 6px rgba(0,0,0,.15);
             position: absolute;
-            left: 0;
-            top: 65px;
+            left: -30px;
+            top: 35px;
             display: none;
 
             a {
@@ -712,6 +713,10 @@
         }
       }
     }
+  }
+
+  .main-header__nav ul li .more {
+    float: none;
   }
 
   .main-footer {
