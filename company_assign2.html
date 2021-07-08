@@ -69,8 +69,10 @@
               <tr>
                 <td class="member-table__title">專題</td>
                 <td class="edit-select invoiceArea">
-                  <div class="input-selectS" data-role="district" data-name="invoice_area">
-                    <select name="" id="" class="" data-name=""><option value="第一次當主管就上手">第一次當主管就上手</option></select>
+                  <div data-role="district" data-name="invoice_area" class="input-selectS">
+                    <select class="js-example-basic-single" name="state">
+                      <option value="AL">請選擇</option>
+                    </select>
                   </div>
                 </td>
               </tr>
@@ -316,6 +318,10 @@
         width: '100%',
       });
     } );
+
+    $(document).ready(function() {
+      $('.js-example-basic-single').select2();
+    });
   </script>
 </body>
 </html>
