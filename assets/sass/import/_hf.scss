@@ -29,14 +29,16 @@
         }
       }
     }
+
     img {
-      margin-right: $spacing-base;
+      margin-right: 16px;
+      height: 30px;
     }
   }
 
   &__nav {
     float: left;
-    margin-left: 50px;
+    margin-left: 32px;
     position: relative;
 
     ul {
@@ -45,9 +47,9 @@
       
       li {
         float: left;
-        font-size: $font-size-18;
+        font-size: 1.0625rem;
         font-weight: $font-weight-medium;
-        margin-right: 20px;
+        margin-right: 16px;
 
         &#submenu-book {
           .more {
@@ -249,11 +251,11 @@
     }
 
     &--signed {
-      margin-top: $block-spacing-small;
+      margin-top: 24px;
       position: relative;
 
       .member-data {
-        font-size: $font-size-18;
+        font-size: 1.0625rem;
         color: $gray-light;
         cursor: pointer;
         max-height: 35px;
@@ -388,6 +390,12 @@
 @media (max-width: $screen-lg-min) and (min-width: $screen-md-min) {
   .main-header {
     &__logos {
+      margin-top: 25px;
+
+      img {
+        height: 26px;
+      }
+
       .logo-manager {
         display: none;
       }
@@ -398,7 +406,7 @@
       
       ul {
         li {
-          margin-right: $spacing-small;
+          margin-right: 8px;
         }
       }
     }
@@ -407,9 +415,19 @@
   .main-header__search {
     margin-right: 8px;
   }
+
   .main-header__nav ul li {
     margin-right: 10px;
-    font-size: 1.1rem;
+    font-size: 1rem;
+  }
+
+  .main-header__nav ul li i.icon-arrow-down {
+    width: 20px;
+    height: 18px;
+  }
+
+  .main-header__nav ul li i.icon-arrow-down::before {
+    font-size: 1.2rem;
   }
 }
 
