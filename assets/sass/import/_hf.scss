@@ -7,9 +7,23 @@
   top: 0;
   z-index: 99;
   transition: $transition-slow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &--active {
     box-shadow: 0 0 3px rgba(0,0,0,.15);
+  }
+
+  > .container > .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    &::before, &::after {
+      display: none;
+    }
   }
 
   &.index {
@@ -20,7 +34,8 @@
 
   &__logos {
     float: left;
-    margin-top: 23px;
+    // margin-top: 23px;
+    display: flex;
 
     a {
       &:last-child {
@@ -32,7 +47,8 @@
 
     img {
       margin-right: 16px;
-      height: 30px;
+      height: 34px;
+      display: block;
     }
   }
 
@@ -43,7 +59,7 @@
 
     ul {
       float: left;
-      margin-top: 25px;
+      // margin-top: 25px;
       
       li {
         float: left;
@@ -159,9 +175,8 @@
   &__search {
     float: right;
     height: 40px;
-    // overflow: hidden;
     margin-right: 16px;
-    margin-top: $block-spacing-small;
+    // margin-top: $block-spacing-small;
     position: relative;
 
     .icon.icon-search {
@@ -179,6 +194,15 @@
 
       &:hover, &active {
         color: $brand-primary;
+      }
+    }
+
+    &--video {
+      .icon.icon-search {
+        width: auto;
+        color: $gray-light;
+        font-size: $font-size-18;
+        font-weight: $font-weight-medium;
       }
     }
     
@@ -224,7 +248,7 @@
     float: right;
 
     &--login {
-      margin-top: 25px;
+      // margin-top: 25px;
       color: $gray-light;
 
       a {
@@ -251,7 +275,7 @@
     }
 
     &--signed {
-      margin-top: 24px;
+      // margin-top: 24px;
       position: relative;
 
       .member-data {
