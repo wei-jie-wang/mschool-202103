@@ -12,14 +12,13 @@
   align-items: center;
 
   &--active {
-    box-shadow: 0 0 3px rgba(0,0,0,.15);
+    box-shadow: 0 0 8px rgba(0,0,0,.15);
   }
 
   > .container > .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 
     &::before, &::after {
       display: none;
@@ -33,8 +32,6 @@
   }
 
   &__logos {
-    float: left;
-    // margin-top: 23px;
     display: flex;
 
     a {
@@ -52,17 +49,20 @@
     }
   }
 
-  &__nav {
-    float: left;
+  .nav-box {
+    flex-grow: 2;
     margin-left: 32px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
     position: relative;
 
     ul {
-      float: left;
-      // margin-top: 25px;
-      
+      display: flex;
+
       li {
-        float: left;
         font-size: 1.0625rem;
         font-weight: $font-weight-medium;
         margin-right: 16px;
@@ -124,7 +124,6 @@
               width: calc(100% / 3);
               height: 100%;
               padding: $spacing-small;
-              // padding-left: 43px;
               text-align: center;
               display: block;
               font-size: $font-size-base;
@@ -165,51 +164,33 @@
         }
       }
     }
-    
-    .btn {
-      float: left;
-      margin-top: 22px;
-    }
   }
 
   &__search {
-    float: right;
-    height: 40px;
     margin-right: 16px;
-    // margin-top: $block-spacing-small;
     position: relative;
 
     .icon.icon-search {
-      float: left;
       width: 24px;
-      height: 40px;
       color: $gray-light;
       cursor: pointer;
       transition: $transition-slow;
+      display: flex;
+      align-items: center;
 
       &::before {
-        position: relative;
-        top: 8px;
+        margin-right: 8px;
       }
 
       &:hover, &active {
         color: $brand-primary;
       }
     }
-
-    &--video {
-      .icon.icon-search {
-        width: auto;
-        color: $gray-light;
-        font-size: $font-size-18;
-        font-weight: $font-weight-medium;
-      }
-    }
     
     .search-box {
       position: absolute;
       right: -10px;
-      top: 0;
+      top: -7px;
       display: none;
 
       .search-box__data {
@@ -235,9 +216,83 @@
       }
     }
 
-    &--active {
-      // overflow: inherit;
 
+    &--video {
+      position: inherit;
+
+      .icon.icon-search {
+        width: auto;
+        color: $gray-light;
+        font-size: $font-size-18;
+        font-weight: $font-weight-medium;
+      }
+
+      .search-box {
+        background-color: #EFEEEA;
+        width: 100%;
+        top: 80px;
+        left: 0;
+        right: inherit;
+        box-shadow: 0 8px 8px -8px rgba(0,0,0,.15) inset;
+        padding: 32px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 9999;
+
+        display: block;
+
+        .search-box__data {
+          display: inline-block;
+          margin: auto;
+          width: 40%;
+          height: 50px;
+
+          &::before {
+            color: $brand-primary;
+            left: inherit;
+          }
+
+          .search-box__input {
+            width: calc(100% - 90px);
+            height: 50px;
+          }
+
+          .hotwords {
+            margin-top: 20px;
+
+            ul {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              li {
+                margin: 0 4px;
+                font-size: $font-size-14;
+
+                a {
+                  background-color: #304679;
+                  color: #fff;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                  padding: 6px 16px;
+                  border-radius: 100px;
+
+                  &:hover {
+                    background-color: $brand-primary;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+    &--active {
       .search-box {
         right: -10px;
       }
@@ -245,10 +300,7 @@
   }
 
   &__member {
-    float: right;
-
     &--login {
-      // margin-top: 25px;
       color: $gray-light;
 
       a {
@@ -275,7 +327,6 @@
     }
 
     &--signed {
-      // margin-top: 24px;
       position: relative;
 
       .member-data {
@@ -309,28 +360,25 @@
         display: none;
 
         ul {
+          padding: 8px 0;
+
           li {
             min-width: 140px;
             line-height: 1;
 
             &:last-child {
-              padding-bottom: $spacing-small;
-              // margin-top: 16px;
               border-top: 1px solid $bg-defualt;
             }
 
             a {
               display: block;
               width: 100%;
-              padding: $spacing-small;
-              padding-bottom: 0;
+              padding: 8px 16px;
             }
 
             &.company {
               border-top: 1px solid $bg-defualt;
-              border-bottom: 1px solid $bg-defualt;
-              margin-top: $spacing-small;
-              padding-bottom: $spacing-small;
+              padding: 2px 0;
 
               .company--mobile {
                 display: none;
@@ -414,10 +462,8 @@
 @media (max-width: $screen-lg-min) and (min-width: $screen-md-min) {
   .main-header {
     &__logos {
-      margin-top: 25px;
-
       img {
-        height: 26px;
+        // height: 26px;
       }
 
       .logo-manager {
@@ -426,8 +472,6 @@
     }
 
     &__nav {
-      margin-left: 30px;
-      
       ul {
         li {
           margin-right: 8px;

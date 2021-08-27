@@ -94,11 +94,20 @@
   position: relative;
   top: 0;
 
-  &:hover, &active {
-    // background-color: $brand-primary-variant;
+  &:hover, &:active {
     background-color: #ef5858;
     box-shadow: 0 2px 0 #b13737;
     top: 2px;
+  }
+
+  &.btn--small {
+    box-shadow: 0 2px 0 #B13737;
+
+    &:hover, &:active {
+      background-color: #ef5858;
+      box-shadow: 0 0px 0 #b13737;
+      top: 2px;
+    }
   }
 }
 .btn-border-primary {

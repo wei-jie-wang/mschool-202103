@@ -1366,10 +1366,22 @@ ol ol {
   top: 0;
 }
 
-.btn-primary:hover, .btn-primaryactive {
+.btn-primary:hover, .btn-primary:active {
   background-color: #ef5858;
   -webkit-box-shadow: 0 2px 0 #b13737;
           box-shadow: 0 2px 0 #b13737;
+  top: 2px;
+}
+
+.btn-primary.btn--small {
+  -webkit-box-shadow: 0 2px 0 #B13737;
+          box-shadow: 0 2px 0 #B13737;
+}
+
+.btn-primary.btn--small:hover, .btn-primary.btn--small:active {
+  background-color: #ef5858;
+  -webkit-box-shadow: 0 0px 0 #b13737;
+          box-shadow: 0 0px 0 #b13737;
   top: 2px;
 }
 
